@@ -5,5 +5,31 @@
   "main": "index.js",
   "author": "Outstem <outstem@uottawa.ca>",
   "license": "MIT",
-  "packageManager": "yarn@3.3.1"
+  "packageManager": "yarn@3.3.1",
+  "peerDependencies": {
+    "@angular-eslint/eslint-plugin": "*",
+    "@angular-eslint/eslint-plugin-template": "*",
+    "@typescript-eslint/eslint-plugin": "*",
+    "eslint-plugin-eslint-comments": "*",
+    "eslint-plugin-import": "*",
+    "eslint-plugin-jsdoc": "*",
+    "eslint-plugin-mocha": "*",
+    "eslint-plugin-no-only-tests": "*",
+    "eslint-plugin-prefer-arrow": "*",
+    "eslint-plugin-unused-imports": "*"
+  },
+  "peerDependenciesMeta": {
+    "@angular-eslint/eslint-plugin": {
+      "optional": true
+    },
+    "@angular-eslint/eslint-plugin-template": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^8.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.33.0"
+  }
 }
