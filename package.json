@@ -1,0 +1,9 @@
+{
+  "name": "eslint-config-outstem",
+  "version": "0.0.1",
+  "description": "Linting configurations used by the Outstem team.",
+  "main": "index.js",
+  "author": "Outstem <outstem@uottawa.ca>",
+  "license": "MIT",
+  "packageManager": "yarn@3.3.1"
+}
