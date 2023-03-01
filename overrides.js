@@ -15,8 +15,6 @@ module.exports = {
     'prefer-arrow/prefer-arrow-functions': 'error',
     'prefer-const': 'error',
     'use-isnan': 'error',
-    'jasmine/no-focused-tests': 'error',
-    'jasmine/no-disabled-tests': 'error',
     'jsdoc/newline-after-description': 'off',
     'no-var': 'error',
     'no-shadow': 'off', // This rule must be disabled because it conflicts with @typescript-eslint/no-shadow
