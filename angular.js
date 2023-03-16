@@ -26,6 +26,8 @@ module.exports = {
     ],
     '@angular-eslint/no-output-native': 'error',
     '@angular-eslint/use-lifecycle-interface': 'error',
+      // CYPRESS RULES
+      'cypress/no-force': 'error',
+      'cypress/no-pause': 'error',
   },
-
 };
