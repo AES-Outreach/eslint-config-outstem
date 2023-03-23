@@ -3,6 +3,7 @@ module.exports = {
     './base.js',
     'plugin:@angular-eslint/ng-cli-compat',
     'plugin:@angular-eslint/template/process-inline-templates',
+    'plugin:cypress/recommended',
     './angular-overrides.js',
     './overrides.js', // this should always be last because it's our common rules and contains prettier
   ],
@@ -26,6 +27,8 @@ module.exports = {
     ],
     '@angular-eslint/no-output-native': 'error',
     '@angular-eslint/use-lifecycle-interface': 'error',
+      // CYPRESS RULES
+      'cypress/no-force': 'error',
+      'cypress/no-pause': 'error',
   },
-
 };
