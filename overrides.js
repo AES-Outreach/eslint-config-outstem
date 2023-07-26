@@ -26,10 +26,7 @@ module.exports = {
     // ESLINT-COMMENTS
     'eslint-comments/no-unused-disable': 'error',
     'eslint-comments/no-unlimited-disable': 'error',
-    'eslint-comments/disable-enable-pair': [
-      'error',
-      { allowWholeFile: true },
-    ],
+    'eslint-comments/disable-enable-pair': ['error', { allowWholeFile: true }],
 
     // TYPESCRIPT
     '@typescript-eslint/explicit-function-return-type': 'error',
@@ -61,51 +58,6 @@ module.exports = {
     '@typescript-eslint/member-ordering': 'off',
     '@typescript-eslint/consistent-type-assertions': 'error',
     '@typescript-eslint/no-unused-expressions': 'error',
-    '@typescript-eslint/naming-convention': [
-      'error',
-      // typeLike (class, interface, typeAlias, enum, typeParameter) should use StrictPascalCase
-      { selector: ['typeLike'], format: ['PascalCase'] },
-      // Destructured variables should have no casing enforced
-      {
-        selector: ['variable'],
-        modifiers: ['destructured'],
-        format: null,
-      },
-      // Stand-alone variables should be camelCase or UPPER_CASE
-      {
-        selector: ['variable'],
-        format: ['camelCase', 'UPPER_CASE'],
-      },
-      // Class properties and function parameters are only loosely enforced
-      {
-        selector: [
-          'parameter',
-          'accessor',
-          'classProperty',
-          'typeProperty',
-        ],
-        format: ['snake_case', 'camelCase', 'UPPER_CASE'],
-        leadingUnderscore: 'allow',
-      },
-      // Functions must use camelCase
-      {
-        selector: [
-          'function',
-          'parameter',
-          'variable',
-          'classMethod',
-          'typeMethod',
-          'classProperty',
-          'typeProperty',
-        ],
-        format: ['camelCase'],
-        types: ['function'], // To scope 'parameter', 'classProperty', 'typeProperty' and 'variable'
-        filter: { regex: 'toJSON', match: false },
-      },
-    ],
-    '@typescript-eslint/consistent-indexed-object-style': [
-      'error',
-      'record',
-    ],
+    '@typescript-eslint/consistent-indexed-object-style': ['error', 'record'],
   },
 };

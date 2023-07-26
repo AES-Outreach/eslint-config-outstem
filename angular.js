@@ -5,6 +5,7 @@ module.exports = {
     'plugin:@angular-eslint/template/process-inline-templates',
     'plugin:cypress/recommended',
     './angular-overrides.js',
+    './naming/default',
     './overrides.js', // this should always be last because it's our common rules and contains prettier
   ],
   rules: {
@@ -27,8 +28,8 @@ module.exports = {
     ],
     '@angular-eslint/no-output-native': 'error',
     '@angular-eslint/use-lifecycle-interface': 'error',
-      // CYPRESS RULES
-      'cypress/no-force': 'error',
-      'cypress/no-pause': 'error',
+    // CYPRESS RULES
+    'cypress/no-force': 'error',
+    'cypress/no-pause': 'error',
   },
 };
