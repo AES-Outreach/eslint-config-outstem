@@ -7,7 +7,7 @@ module.exports = {
     'prefer-arrow',
   ],
   parserOptions: {
-    ecmaVersion: 9,
+    ecmaVersion: 'latest',
     project: './tsconfig.json',
   },
   env: {
