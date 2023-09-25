@@ -28,6 +28,8 @@ module.exports = {
     ],
     '@angular-eslint/no-output-native': 'error',
     '@angular-eslint/use-lifecycle-interface': 'error',
+    eqeqeq: 'error',
+    '@angular-eslint/template/eqeqeq': 'error',
     // CYPRESS RULES
     'cypress/no-force': 'error',
     'cypress/no-pause': 'error',
