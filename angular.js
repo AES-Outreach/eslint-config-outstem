@@ -9,6 +9,23 @@ module.exports = {
     './overrides.js', // this should always be last because it's our common rules and contains prettier
   ],
   rules: {
+    'no-restricted-imports': [
+      'error',
+      {
+        paths: [
+          {
+            name: 'rxjs/operators',
+            importNames: ['shareReplay'],
+            message: "Prefer to use 'refCountedCache'",
+          },
+          {
+            name: '@aes-outreach/ngx-resources',
+            importNames: ['logValue'],
+            message: "Please remove logging",
+          },
+        ],
+      },
+    ],
     '@angular-eslint/component-selector': [
       'error',
       {
