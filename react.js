@@ -1,11 +1,11 @@
 module.exports = {
   extends: [
-    './base.js', 
-    './naming/react', 
-    './overrides.js',
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
-    'plugin:react-hooks/recommended'
+    'plugin:react-hooks/recommended',
+    './base.js', 
+    './naming/react', 
+    './overrides.js'
   ],
   settings: {
     react: {
