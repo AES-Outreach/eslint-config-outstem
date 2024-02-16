@@ -1,7 +1,7 @@
 module.exports = {
   extends: [
     './base.js',
-    'plugin:@angular-eslint/ng-cli-compat',
+    'plugin:@angular-eslint/recommended',
     'plugin:@angular-eslint/template/process-inline-templates',
     'plugin:cypress/recommended',
     './angular-overrides.js',
