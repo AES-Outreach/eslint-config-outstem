@@ -45,7 +45,6 @@ module.exports = {
     ],
     '@angular-eslint/no-output-native': 'error',
     '@angular-eslint/use-lifecycle-interface': 'error',
-    '@angular-eslint/template/prefer-self-closing-tags': ['error'],
 
     // CYPRESS RULES
     'cypress/no-force': 'error',
