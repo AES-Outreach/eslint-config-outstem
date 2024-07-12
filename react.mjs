@@ -1,3 +1,13 @@
+import tsEslint from 'typescript-eslint';
+import reactRecommended from 'eslint-plugin-react/configs/recommended.js';
+import reactJsxRuntime from 'eslint-plugin-react/configs/jsx-runtime.js';
+import hooksPlugin from 'eslint-plugin-react-hooks';
+
+import { fixupPluginRules } from '@eslint/compat';
+
+////////////////////////////////////////////////////////////////////////////
+// Naming copy pasta
+////////////////////////////////////////////////////////////////////////////
 const base = [
   'error',
   // typeLike (class, interface, typeAlias, enum, typeParameter) should use StrictPascalCase
@@ -51,7 +61,26 @@ const react = [
   },
 ];
 
-module.exports = {
-  baseDefault, // default isn't allowed as a variable name in js
-  react,
-};
+////////////////////////////////////////////////////////////////////////////
+// Naming copy pasta
+////////////////////////////////////////////////////////////////////////////
+
+export default tsEslint.config(
+  {
+    files: ['**/*.tsx'],
+    plugins: {
+      'react-hooks': fixupPluginRules(hooksPlugin),
+    },
+    rules: hooksPlugin.configs.recommended.rules,
+  },
+  {
+    files: ['**/*.tsx'],
+    extends: [reactRecommended, reactJsxRuntime],
+  },
+  // {
+  //   files: ['**/*.tsx'],
+  //   rules: {
+  //     '@typescript-eslint/naming-convention': react,
+  //   },
+  // },
+);
