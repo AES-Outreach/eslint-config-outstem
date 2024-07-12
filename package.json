@@ -2,7 +2,7 @@
   "name": "eslint-config-outstem",
   "version": "0.0.1",
   "description": "Linting configurations used by the Outstem team.",
-  "main": "index.js",
+  "main": "index.mjs",
   "author": "Outstem <outstem@uottawa.ca>",
   "license": "MIT",
   "publishConfig": {
@@ -21,32 +21,27 @@
   "homepage": "https://github.com/AES-Outreach/eslint-config-outstem#readme",
   "packageManager": "yarn@3.3.1",
   "peerDependencies": {
-    "@angular-eslint/eslint-plugin": "*",
-    "@angular-eslint/eslint-plugin-template": "*",
-    "@typescript-eslint/eslint-plugin": "*",
-    "eslint-plugin-eslint-comments": "*",
-    "eslint-plugin-import": "*",
-    "eslint-plugin-jsdoc": "*",
-    "eslint-plugin-mocha": "*",
-    "eslint-plugin-no-only-tests": "*",
-    "eslint-plugin-prefer-arrow": "*",
-    "eslint-plugin-unused-imports": "*"
-  },
-  "peerDependenciesMeta": {
-    "@angular-eslint/eslint-plugin": {
-      "optional": true
-    },
-    "@angular-eslint/eslint-plugin-template": {
-      "optional": true
-    }
+    "eslint": "^9.0.0"
   },
   "dependencies": {
+    "@eslint-community/eslint-plugin-eslint-comments": "^4.3.0",
+    "@eslint/compat": "^1.1.0",
+    "@eslint/js": "^9.6.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0"
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-i18n-json": "^4.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsdoc": "^48.5.0",
+    "eslint-plugin-no-only-tests": "^3.1.0",
+    "eslint-plugin-prefer-arrow-functions": "^3.3.2",
+    "eslint-plugin-react": "^7.34.3",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-storybook": "^0.8.0",
+    "eslint-plugin-unused-imports": "^4.0.0",
+    "typescript-eslint": "^7.15.0"
   },
   "devDependencies": {
-    "eslint": "^8.33.0",
-    "prettier": "^3.0.0"
+    "prettier": "^3.0.0",
+    "typescript": "^5.5.3"
   }
 }
