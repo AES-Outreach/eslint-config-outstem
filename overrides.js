@@ -18,6 +18,12 @@ module.exports = {
     'jsdoc/newline-after-description': 'off',
     'no-var': 'error',
     'no-shadow': 'off', // This rule must be disabled because it conflicts with @typescript-eslint/no-shadow
+    'no-warning-comments': [
+      'error',
+      {
+        terms: ['DEBUG'],
+      },
+    ],
 
     // TODO: this one isn't in everything why??
     // Import rules linting options
