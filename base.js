@@ -18,12 +18,4 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:eslint-comments/recommended',
   ],
-  rules: {
-    'no-warning-comments': [
-      'error',
-      {
-        terms: ['DEBUG'],
-      },
-    ],
-  },
 };
