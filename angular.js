@@ -21,7 +21,7 @@ module.exports = {
           {
             name: '@aes-outreach/ngx-resources',
             importNames: ['logValue'],
-            message: "Please remove logging",
+            message: 'Please remove logging',
           },
         ],
       },
