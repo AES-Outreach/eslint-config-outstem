@@ -8,7 +8,7 @@ module.exports = {
     'unused-imports/no-unused-imports': 'error',
     'no-restricted-imports': 'error',
     'no-underscore-dangle': 'off',
-    'no-console': ['error', { allow: ['error'] }],
+    'no-console': ['error', { allow: ['error', 'warn'] }],
     // TODO: what are these next two??
     'id-blacklist': 'off',
     'id-match': 'off',
