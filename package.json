@@ -30,6 +30,9 @@
     "eslint-plugin-mocha": "*",
     "eslint-plugin-no-only-tests": "*",
     "eslint-plugin-prefer-arrow": "*",
+    "eslint-config-prettier": "*",
+    "eslint-plugin-react": "*",
+    "eslint-plugin-react-hooks": "*",
     "eslint-plugin-unused-imports": "*"
   },
   "peerDependenciesMeta": {
@@ -38,12 +41,15 @@
     },
     "@angular-eslint/eslint-plugin-template": {
       "optional": true
+    },
+    "eslint-plugin-react": {
+      "optional": true
+    },
+    "eslint-plugin-react-hooks": {
+      "optional": true
     }
   },
   "dependencies": {
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0"
   },
   "devDependencies": {
     "eslint": "^8.33.0",
