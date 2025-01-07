@@ -59,7 +59,6 @@ module.exports = {
       },
     ],
     '@typescript-eslint/no-non-null-assertion': 'error',
-    '@typescript-eslint/ban-types': 'error',
     // TODO: do we want this one??
     '@typescript-eslint/member-ordering': 'off',
     '@typescript-eslint/consistent-type-assertions': 'error',
