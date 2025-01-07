@@ -30,7 +30,6 @@
     "eslint-plugin-mocha": "*",
     "eslint-plugin-no-only-tests": "*",
     "eslint-plugin-prefer-arrow": "*",
-    "eslint-config-prettier": "*",
     "eslint-plugin-react": "*",
     "eslint-plugin-react-hooks": "*",
     "eslint-plugin-unused-imports": "*"
@@ -50,6 +49,7 @@
     }
   },
   "dependencies": {
+    "eslint-config-prettier": "^8.3.0"
   },
   "devDependencies": {
     "eslint": "^8.33.0",
